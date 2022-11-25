@@ -225,17 +225,13 @@
                         <div class="col-md-3 text-center animate-box">
                             <div class="groom-men">
                                 <h3>Bringst Du was mit?</h3>
-				<form action="/submitted" name="guestbook" netlify netlify-honeypot="not-for-humans">
-					<p style="display: none;"><label>Don’t fill this out if you're human: <input name="not-for-humans" /></label</p>>		
-				<label for="name" class="sr-only">Name:><input class="form-control" placeholder="Name" type="text" name="name" /></label>
-    				<label for="essen" class="sr-only">Das birng' ich mit:<textarea class="form-control" name="message" placeholder="Das bringe ich mit..."></textarea></label>
-				<button type="submit" class="btn btn-primary">Absenden</button>
+                                <form name="buffet" netlify netlify-honeypot="not-for-humans">
+                                    <p style="display: none;"><label>Don’t fill this out if you're human: <input name="not-for-humans" /></label></p>
+                                    <label for="name" class="sr-only">Name:><input class="form-control" placeholder="Name" type="text" name="name" /></label>
+                                    <label for="essen" class="sr-only">Das birng' ich mit:<textarea class="form-control" name="message" placeholder="Das bringe ich mit..."></textarea></label>
+                                    <button type="submit" class="btn btn-primary">Absenden</button>
+                                </form>
                             </div>
-                            </div>
-                        </div>
-                        </div>
-  				</form>
-			    </div>
                         </div>
                     </div>
                 </div>
@@ -251,7 +247,7 @@
                         </div>
                         <div name="formular" class="row animate-box">
                             <div class="col-md-10 col-md-offset-1">
-				    <form method=”POST” name=”Hochzeit-Zusage” class="form-inline" action="https://formspree.io/f/xqkjodbr">
+                                <form method=”POST” name=”Hochzeit-Zusage” class="form-inline" action="https://formspree.io/f/xqkjodbr">
                                     <div class="col-md-4 col-sm-4">
                                         <div class="form-group">
                                             <label for="name" class="sr-only">Name:</label>
