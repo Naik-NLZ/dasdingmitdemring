@@ -223,23 +223,46 @@
                             </div>
                         </div>
                         <div class="col-md-3 text-center animate-box">
-                            <form method=”POST” name=”essen” class="form-inline">
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="name" class="sr-only">Name:</label>
-                                        <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
-                                    </div>
-
-                                    </br></br>
-                                    <div class="form-group"></div>
-                                    <label for="note" class="sr-only">Ich bringe mit:</label>
-                                    <textarea rows="2" class="form-control" id="note" name="message" placeholder="z.Bsp. 3 Salzstangen" required></textarea>
-                                </div>
+                            <div class="groom-men">
+                                <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+                                <script>
+                                    /* paste this line in verbatim */
+                                    window.formbutton = window.formbutton || function() {
+                                        (formbutton.q = formbutton.q || []).push(arguments)
+                                    };
+                                    /* customize formbutton below*/
+                                    formbutton("create", {
+                                        action: "https://formspree.io/f/mzbwqjel",
+                                        title: "Was bringst Du mit?",
+                                        fields: [{
+                                                type: "name",
+                                                label: "Name:",
+                                                name: "name",
+                                                required: true,
+                                                placeholder: "Orang Utan Klaus"
+                                            },
+                                            {
+                                                type: "textarea",
+                                                label: "Mundvorrat:",
+                                                name: "essen",
+                                                placeholder: "zbsp. 3 pappsche Salzstangen",
+                                            },
+                                            {
+                                                type: "submit"
+                                            }
+                                        ],
+                                        styles: {
+                                            title: {
+                                                backgroundColor: "#06705c"
+                                            },
+                                            button: {
+                                                backgroundColor: "#06705c"
+                                            }
+                                        }
+                                    });
+                                </script>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <button type="submit" class="btn btn-primary">Absenden</button>
-                        </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -275,7 +298,7 @@
                     </div>
                     <div name="formular" class="row animate-box">
                         <div class="col-md-10 col-md-offset-1">
-                            <form name=”Hochzeit-Zusage” class="form-inline" method=”POST” action="https://formspree.io/f/xqkjodbr">
+                            <form name=”Hochzeit-Zusage” class="form-inline" method="POST" action="https://formspree.io/f/xqkjodbr" netlify-data="true">
                                 <div class="col-md-4 col-sm-4">
                                     <div class="form-group">
                                         <label for="name" class="sr-only">Name:</label>
