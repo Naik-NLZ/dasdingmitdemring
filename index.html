@@ -222,20 +222,23 @@
                                 <p>Damit auch jeder satt wird bitten wir euch um kulinarische Sachspenden. tragt euch dazu bitte in die Liste ein.</p>
                             </div>
                         </div>
-                        <form method=”POST” name=”essen” class="form-inline" action="https://formspree.io/f/xqkjodbr">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="form-group">
-                                    <label for="name" class="sr-only">Name:</label>
-                                    <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
+                        <div class="col-md-3 text-center animate-box">
+                            <form method=”POST” name=”essen” class="form-inline" action="https://formspree.io/f/xqkjodbr">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group">
+                                        <label for="name" class="sr-only">Name:</label>
+                                        <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="note" class="sr-only">Ich bringe mit:</label>
+                                        <textarea rows="2" class="form-control" id="note" name="message" placeholder="z.Bsp. 3 Salzstangen" required></textarea>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="note" class="sr-only">Ich bringe mit:</label>
-                                    <textarea rows="2" class="form-control" id="note" name="message" placeholder="z.Bsp. 3 Salzstangen" required></textarea>
+                                <div class="col-md-4 col-sm-4">
+                                    <button type="submit" class="btn btn-primary">Absenden</button>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <button type="submit" class="btn btn-primary">Absenden</button>
-                            </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
 
