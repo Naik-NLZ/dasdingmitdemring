@@ -25,14 +25,14 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #1abebe;
+  color: #06705c;
   -webkit-transition: 0.5s, ease;
   -o-transition: 0.5s, ease;
   transition: 0.5s, ease;
 }
 a:hover {
   text-decoration: none;
-  color: #1abebe;
+  color: #06705c;
 }
 
 p,
@@ -40,7 +40,7 @@ ul,
 ol {
   margin-bottom: 1.5em;
   font-size: 16px;
-  color: #859da7;
+  color: #333b3e;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #4d636b;
+  color: #232627;
   font-family: "Montez", cursive;
   font-weight: 400;
   margin: 0 0 30px 0;
@@ -77,17 +77,17 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #1abebe;
+  background: #06705c;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #1abebe;
+  background: #06705c;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #1abebe;
+  background: #06705c;
 }
 
 #fh5co-header {
@@ -108,7 +108,7 @@ figure {
 
 .header-top {
   padding: 10px 0;
-  background: #1abebe;
+  background: #06705c;
 }
 .header-top .fh5co-link a {
   margin-left: 10px;
@@ -263,11 +263,11 @@ figure {
   border-bottom: none !important;
 }
 .sf-menu a:hover, .sf-menu a:focus {
-  color: #1abebe !important;
+  color: #06705c !important;
 }
 
 .sf-menu li.active a:hover, .sf-menu li.active a:focus {
-  color: #1abebe;
+  color: #06705c;
 }
 
 .sf-menu li,
@@ -291,7 +291,7 @@ figure {
 .sf-menu ul li:hover a,
 .sf-menu ul li.sfHover a,
 .sf-menu li.active a {
-  color: #1abebe;
+  color: #06705c;
 }
 
 .sf-menu ul li:hover,
@@ -381,10 +381,10 @@ figure {
   }
 }
 #fh5co-logo a {
-  color: #1abebe;
+  color: #06705c;
 }
 #fh5co-logo a:hover, #fh5co-logo a:focus {
-  color: #1abebe !important;
+  color: #06705c !important;
 }
 
 #fh5co-menu-wrap {
@@ -399,7 +399,7 @@ figure {
 }
 
 #fh5co-primary-menu > li > ul li.active > a {
-  color: #1abebe !important;
+  color: #06705c !important;
 }
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
@@ -519,7 +519,7 @@ figure {
   background: none;
 }
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
-  color: #1abebe !important;
+  color: #06705c !important;
 }
 
 #fh5co-couple,
@@ -559,7 +559,7 @@ figure {
   font-size: 50px;
   font-weight: 300;
   position: relative;
-  color: #1abebe;
+  color: #06705c;
 }
 .heading-section p {
   font-size: 18px;
@@ -583,7 +583,7 @@ figure {
 #fh5co-couple .amp-center {
   font-size: 60px;
   margin-top: 100%;
-  color: #1abebe;
+  color: #06705c;
 }
 @media screen and (max-width: 768px) {
   #fh5co-couple .amp-center {
@@ -592,7 +592,7 @@ figure {
 }
 
 #fh5co-countdown {
-  background: #1abebe;
+  background: #06705c;
 }
 #fh5co-countdown .countdown {
   margin-bottom: 0;
@@ -700,7 +700,7 @@ figure {
 #fh5co-started .btn-block {
   height: 54px;
   border: none !important;
-  background: #1abebe;
+  background: #06705c;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -813,7 +813,7 @@ figure {
   color: rgba(0, 0, 0, 0.3);
 }
 .fh5co-blog .blog-text span.comment a i {
-  color: #1abebe;
+  color: #06705c;
   padding-left: 4px;
 }
 .fh5co-blog .blog-text h3 {
@@ -840,18 +840,18 @@ figure {
 
 .fh5co-social-icons > a {
   padding: 4px 10px;
-  color: #1abebe;
+  color: #06705c;
 }
 .fh5co-social-icons > a i {
   font-size: 26px;
 }
 .fh5co-social-icons > a:hover, .fh5co-social-icons > a:focus, .fh5co-social-icons > a:active {
   text-decoration: none;
-  color: #4d636b;
+  color: #232627;
 }
 
 #footer {
-  background: #1abebe;
+  background: #06705c;
   padding: 60px 0 40px;
 }
 #footer p {
@@ -877,7 +877,7 @@ figure {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #1abebe;
+  background: #06705c;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -885,7 +885,7 @@ figure {
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #1abebe;
+  background: #06705c;
   color: #fff !important;
 }
 .btn:hover, .btn:active, .btn:focus {
@@ -964,14 +964,14 @@ figure {
   color: rgba(255, 255, 255, 0.4);
 }
 #offcanvas-menu ul li a:hover {
-  color: #1abebe;
+  color: #06705c;
 }
 #offcanvas-menu ul li > .fh5co-sub-menu {
   margin-top: 9px;
   padding-left: 20px;
 }
 #offcanvas-menu ul li.active > a {
-  color: #1abebe;
+  color: #06705c;
 }
 #offcanvas-menu ul .fh5co-sub-menu {
   display: block !important;

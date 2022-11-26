@@ -86,14 +86,14 @@
                 <div class="container">
                     <div class="nav-header">
                         <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-                        <a href="index.html"><img class="ico-img nav-header" src="./images/rings.jpg"></a>
+                        <a href="index.html"><img class="ico-img nav-header" src="./images/rings.png"></a>
                         <!-- START #fh5co-menu-wrap -->
                         <nav id="fh5co-menu-wrap" role="navigation">
                             <ul class="sf-menu" id="fh5co-primary-menu">
                                 <li><a href="#brautundbraeutigam">Braut &amp; Br&auml;utigam</a></li>
                                 <li><a href="#woundwann">Wann &amp; Wo</a></li>
                                 <li><a href="#gaeste">G&auml;ste</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="#FAQ">FAQ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -207,7 +207,7 @@
                         <div class="col-md-3 text-center animate-box">
                             <div class="groom-men">
                                 <h3>R&uuml;ckmeldung</h3>
-                                <p>F&uum;r unsere Planung brauchen wir eure R&uuml;ckmeldung bitte bis zum 01.03.2023, gerne unkompliziert &uuml;ber dieses Kontaktformular.</p>
+                                <p>F&uuml;r unsere Planung brauchen wir eure R&uuml;ckmeldung bitte bis zum 01.03.2023, gerne unkompliziert &uuml;ber dieses Kontaktformular.</p>
                             </div>
                         </div>
                         <div class="col-md-3 text-center animate-box">
@@ -223,98 +223,121 @@
                             </div>
                         </div>
                         <div class="col-md-3 text-center animate-box">
-                            <form method=”POST” name=”essen” class="form-inline" action="https://formspree.io/f/xqkjodbr">
+                            <form method=”POST” name=”essen” class="form-inline">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group">
+                                        <label for="name" class="sr-only">Name:</label>
+                                        <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
+                                    </div>
+
+                                    </br></br>
+                                    <div class="form-group"></div>
+                                    <label for="note" class="sr-only">Ich bringe mit:</label>
+                                    <textarea rows="2" class="form-control" id="note" name="message" placeholder="z.Bsp. 3 Salzstangen" required></textarea>
+                                </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <button type="submit" class="btn btn-primary">Absenden</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="fh5co-guest">
+                <div class="container">
+                    <div class="col-md-6 text-center animate-box">
+                        <div class="wedding-events">
+                            <div class="desc">
+                                <a name="FAQ">
+                                    <h3>H&auml;fig gestellte Fragen</h3>
+                                </a>
+                                <p><strong>Gibt es einen Dresscode?</strong></p>
+                                <p>Wir wollen mit euch ein gem&uuml;tliches Gartenfest feiern. abei sollt ihr euch in aller erster Line wohl f&uuml;hlen - Ob ihr das in eurer Lieblingsjogger, oder im Coctailkleid tut ist uns gleich.</p>
+                                <p><strong>Kann ich noch jemanden mitbringen?</strong></p>
+                                <p>Eingeladen ist neben Dir selbstverst&auml;ndlich auch immer dein Lieblingslingsmensch.</p>
+                                <p><strong>... und was ist mit den Kindern?</strong></p>
+                                <p>"Kinderl&auml;rm ist Zukunftsmusik!" also immer her mit den Spr&ouml;&szlig;lingen.</br>Wir haben eine gro&szlig;e Wiese zum Rumtoben und einiges an Spiel &amp; Spa&szlig; vorbereitet (durchaus auch von den augewachsenen Veranstaltungsteilnehmern nutzbar)</p>
+                                <p><strong>Wollt Ihr eigentlich auch Geschenke?</strong></p>
+                                <p>Ganz abgedroschen, aber dennoch voller &Uuml;berzeugung:</br>Uner gr&ouml;&szlig;tes Geschenk ist es, diesen besonderen Tag mit euch zu teilen und zu einem unvergesslichen werden zu lassen.</br>Wer dennoch etwas schenken will, darf gerne unser "Zeit-statt-Zeug" Sparschwein füttern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fh5co-started" style="background-image:url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row animate-box"><a name="gaeste"></a>
+                        <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                            <h2>Bist Du dabei?</h2>
+                            <p>Bitte best&auml;tige Deine Teilnahme mit dem folgeneden Formular. Danke.
+                        </div>
+                    </div>
+                    <div name="formular" class="row animate-box">
+                        <div class="col-md-10 col-md-offset-1">
+                            <form name=”Hochzeit-Zusage” class="form-inline" method=”POST” action="https://formspree.io/f/xqkjodbr">
                                 <div class="col-md-4 col-sm-4">
                                     <div class="form-group">
                                         <label for="name" class="sr-only">Name:</label>
                                         <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
                                         </br></br>
-                                        <label for="note" class="sr-only">Ich bringe mit:</label>
-                                        <textarea rows="2" class="form-control" id="note" name="message" placeholder="z.Bsp. 3 Salzstangen" required></textarea>
+                                        <label for="email" class="sr-only">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-sm-4">
-                                    <button type="submit" class="btn btn-primary">Absenden</button>
+                                    <div class="form-group">
+                                        <label for="note" class="sr-only">Ein Kurze Nachricht:</label>
+                                        <textarea rows="4" class="form-control" id="note" name="message" placeholder="Bringst Du jemanden mit?" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <button type="submit" class="btn btn-primary">Ich bin dabei!</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-
-                <div id="fh5co-started" style="background-image:url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <div class="row animate-box"><a name="gaeste"></a>
-                            <div class="col-md-8 col-md-offset-2 text-center heading-section">
-                                <h2>Bist Du dabei?</h2>
-                                <p>Bitte best&auml;tige Deine Teilnahme mit dem folgeneden Formular. Danke.
-                            </div>
-                        </div>
-                        <div name="formular" class="row animate-box">
-                            <div class="col-md-10 col-md-offset-1">
-                                <form method=”POST” name=”Hochzeit-Zusage” class="form-inline" action="https://formspree.io/f/xqkjodbr">
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="form-group">
-                                            <label for="name" class="sr-only">Name:</label>
-                                            <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
-                                            </br></br>
-                                            <label for="email" class="sr-only">Email:</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4">
-                                        <div class="form-group">
-                                            <label for="note" class="sr-only">Ein Kurze Nachricht:</label>
-                                            <textarea rows="4" class="form-control" id="note" name="message" placeholder="Bringst Du jemanden mit?" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4">
-                                        <button type="submit" class="btn btn-primary">Ich bin dabei!</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="fh5co-guest">
-                    <div class="container">
-                        <div class="row animate-box">
-                            <div class="col-md-8 col-md-offset-2 text-center heading-section">
-                                <div id="app">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <footer>
-                    <div id="footer">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <h2>Caro &amp; Kai</h2>
-                                </div>
-                                <div class="col-md-6 col-md-offset-3 text-center">
-
-                                    <p>Copyright 2022-23 <a href="#">Caro &amp; Kai</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a>/ All Images are property of the aformentioned and copying prohibited!</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-
-
             </div>
-            <!-- END fh5co-page -->
+            <div id="fh5co-guest">
+                <div class="container">
+                    <div class="row animate-box">
+                        <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                            <div id="app">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2>Caro &amp; Kai</h2>
+                            </div>
+                            <div class="col-md-6 col-md-offset-3 text-center">
+
+                                <p>Copyright 2022-23 <a href="#">Caro &amp; Kai</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a>/ All Images are property of the aformentioned and copying prohibited!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
 
         </div>
-        <!-- END fh5co-wrapper -->
+        <!-- END fh5co-page -->
 
-        <!-- Google Map
+    </div>
+    <!-- END fh5co-wrapper -->
+
+    <!-- Google Map
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
      -->
-        <!-- jQuery -->
-        <script src="dist/scripts.min.js"></script>
+    <!-- jQuery -->
+    <script src="dist/scripts.min.js"></script>
 </body>
 
 </html>
