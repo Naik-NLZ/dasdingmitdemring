@@ -235,10 +235,10 @@
             </div>
             <div id="fh5co-guest">
                 <div class="container">
-                    <div class="row row-bottom-padded-md">
+                    <div class="row row-bottom-padded-md text-center">
                         <div class="desc full">
                             <a name="FAQ">
-                                <h3>H&auml;fig gestellte Fragen</h3>
+                                <h2>H&auml;fig gestellte Fragen</h2>
                             </a>
                             <p><strong>Gibt es einen Dresscode?</strong></p>
                             <p>Wir wollen mit euch ein gem&uuml;tliches Gartenfest feiern. Dabei sollt ihr euch in aller erster Linie wohl f&uuml;hlen - Ob ihr das in eurer Lieblingsjogger, oder im Coctailkleid tut ist uns gleich.</p>
@@ -306,7 +306,9 @@
         formbutton("create", {
             action: "https://formspree.io/f/mzbwqjel",
             title: "Du bist dabei?",
-            /*buttonImg: "<i class='fa-solid fa-rings-wedding' style='font-size:24px'/>",*/
+            /* change icon */
+            buttonImg: "<i class='fa-solid fa-rings-wedding' style='font-size:24px'/>",
+            /*feedback after submit*/
             onResponse: function(ok, setStatus) {
                 if (ok) {
                     setStatus("Danke! Wir melden uns wenn es noch Fragen, oder Neuigkeiten gibt..");
@@ -314,6 +316,7 @@
                     setStatus("<span style='color:red'>Huch, da gab es ein Problem...</span>");
                 }
             },
+            /* Input fields*/
             fields: [{
                     type: "text",
                     label: "Name:",
@@ -343,13 +346,6 @@
                 },
                 {
                     type: "submit",
-                    style: {
-                        backgroundColor: #06705c,
-                            color: # fff,
-                        border: none!important,
-                        border: 2 px solid transparent!important,
-                        margin: 0 auto 0 auto
-                    }
                 }
 
             ],
