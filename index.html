@@ -50,61 +50,6 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Formbutton -->
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-        /* paste this line in verbatim */
-        window.formbutton = window.formbutton || function() {
-            (formbutton.q = formbutton.q || []).push(arguments)
-        };
-        var btn = document.getElementById('Teilnahme');
-        btn.onclick = window.formbutton || function() {
-            (formbutton.q = formbutton.q || []).push(arguments)
-        };
-        /* customize formbutton below*/
-        formbutton("create", {
-            action: "https://formspree.io/f/mzbwqjel",
-            title: "Was bringst Du mit?",
-            fields: [{
-                    type: "Name",
-                    label: "Name:",
-                    name: "name",
-                    required: true,
-                    placeholder: "Schneewittchen",
-                },
-                {
-                    type: "email",
-                    label: "E-Mail:",
-                    name: "email",
-                    required: true,
-                    placeholder: "ich@examp.le",
-                },
-                {
-                    type: "textarea",
-                    label: "Personen:",
-                    name: "people",
-                    required: true,
-                    placeholder: "zbsp. Wir kommen mit 7 Zwergen",
-                },
-                {
-                    type: "textarea",
-                    label: "Mundvorrat:",
-                    name: "essen",
-                    placeholder: "zbsp. 3 pappsche Salzstangen",
-                },
-                {
-                    type: "submit"
-                }
-            ],
-            styles: {
-                title: {
-                    backgroundColor: "#06705c"
-                },
-                button: {
-                    backgroundColor: "#06705c"
-                }
-            }
-        });
-    </script>
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -279,6 +224,58 @@
                         </div>
                         <div class="row text-center animate-box">
                             <div class="groom-men" style="overflow:scroll;">
+                                <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+                                <script>
+                                    /* paste this line in verbatim */
+                                    window.formbutton = window.formbutton || function() {
+                                        (formbutton.q = formbutton.q || []).push(arguments)
+                                    };
+                                    /* customize formbutton below*/
+                                    formbutton("create", {
+                                        action: "https://formspree.io/f/mzbwqjel",
+                                        title: "Was bringst Du mit?",
+                                        fields: [{
+                                                type: "Name",
+                                                label: "Name:",
+                                                name: "name",
+                                                required: true,
+                                                placeholder: "Schneewittchen",
+                                            },
+                                            {
+                                                type: "email",
+                                                label: "E-Mail:",
+                                                name: "email",
+                                                required: true,
+                                                placeholder: "ich@examp.le",
+                                            },
+                                            {
+                                                type: "textarea",
+                                                label: "Personen:",
+                                                name: "people",
+                                                required: true,
+                                                placeholder: "zbsp. Wir kommen mit 7 Zwergen",
+                                            },
+                                            {
+                                                type: "textarea",
+                                                label: "Mundvorrat:",
+                                                name: "essen",
+                                                placeholder: "zbsp. 3 pappsche Salzstangen",
+                                            },
+                                            {
+                                                type: "submit"
+                                            }
+                                        ],
+                                        styles: {
+                                            title: {
+                                                backgroundColor: "#06705c"
+                                            },
+                                            button: {
+                                                backgroundColor: "#06705c"
+                                            }
+                                        }
+                                    });
+                                </script>
+
                                 <p>
                                     <strong>Caro &amp; Kai</strong> bringen die <strong>Getr&auml;nke</strong> mit.</br>
                                     <strong>Caro &amp; Kai</strong> bringen auch noch andere <strong>sch&ouml;ne Dinge</strong> mit.</br>
@@ -320,7 +317,7 @@
                     <div name="formular" class="row animate-box">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="col-md-8 col-md-offset-3 text-center">
-                                <button type="submit" class="btn btn-primary btn-big" id="Teilnahme">Ich bin dabei!</button>
+                                <button type="submit" class="btn btn-primary btn-big" onclick="formbutton()" id="Teilnahme">Ich bin dabei!</button>
                             </div>
                         </div>
                     </div>
