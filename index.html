@@ -304,63 +304,64 @@
         };
         /* customize formbutton below*/
         formbutton("create", {
-                    action: "https://formspree.io/f/mzbwqjel",
-                    title: "Du bist dabei?",
-                    buttonImg: "<i class='fa-solid fa-rings-wedding' style='font-size:24px'/>",
-                    onResponse: function(ok, setStatus) {
-                        if (ok) {
-                            setStatus("Danke! Wir melden uns wenn es noch Fragen, oder Neuigkeiten gibt..");
-                        } else {
-                            setStatus("<span style='color:red'>Huch, da gab es ein Problem...</span>");
-                        },
-                        fields: [{
-                                    type: "text",
-                                    label: "Name:",
-                                    name: "name",
-                                    required: true,
-                                    placeholder: "Schneewittchen",
-                                },
-                                {
-                                    type: "email",
-                                    label: "E-Mail:",
-                                    name: "email",
-                                    required: true,
-                                    placeholder: "ich@examp.le",
-                                },
-                                {
-                                    type: "textarea",
-                                    label: "Personen:",
-                                    name: "people",
-                                    required: true,
-                                    placeholder: "zbsp. Wir kommen mit 7 Zwergen",
-                                },
-                                {
-                                    type: "textarea",
-                                    label: "Mundvorrat:",
-                                    name: "essen",
-                                    placeholder: "zbsp. 3 pappsche Salzstangen",
-                                },
-                                {
-                                    type: "submit",
-                                    style: {
-                                        backgroundColor: #06705c,
+            action: "https://formspree.io/f/mzbwqjel",
+            title: "Du bist dabei?",
+            buttonImg: "<i class='fa-solid fa-rings-wedding' style='font-size:24px'/>",
+            onResponse: function(ok, setStatus) {
+                if (ok) {
+                    setStatus("Danke! Wir melden uns wenn es noch Fragen, oder Neuigkeiten gibt..");
+                } else {
+                    setStatus("<span style='color:red'>Huch, da gab es ein Problem...</span>");
+                }
+            },
+            fields: [{
+                    type: "text",
+                    label: "Name:",
+                    name: "name",
+                    required: true,
+                    placeholder: "Schneewittchen",
+                },
+                {
+                    type: "email",
+                    label: "E-Mail:",
+                    name: "email",
+                    required: true,
+                    placeholder: "ich@examp.le",
+                },
+                {
+                    type: "textarea",
+                    label: "Personen:",
+                    name: "people",
+                    required: true,
+                    placeholder: "zbsp. Wir kommen mit 7 Zwergen",
+                },
+                {
+                    type: "textarea",
+                    label: "Mundvorrat:",
+                    name: "essen",
+                    placeholder: "zbsp. 3 pappsche Salzstangen",
+                },
+                {
+                    type: "submit",
+                    style: {
+                        backgroundColor: #06705c,
                             color: # fff,
-                                        border: none!important,
-                                        border: 2 px solid transparent!important,
-                                        margin: 0 auto 0 auto
-                                    }
-                                }
+                        border: none!important,
+                        border: 2 px solid transparent!important,
+                        margin: 0 auto 0 auto
+                    }
+                }
 
-                            ],
-                            styles: {
-                                title: {
-                                    backgroundColor: "#06705c"
-                                },
-                                button: {
-                                    backgroundColor: "#06705c"
-                                }
-                            }
-                    });
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "#06705c"
+                },
+                button: {
+                    backgroundColor: "#06705c"
+                }
+            }
+        });
     </script>
 </body>
 
