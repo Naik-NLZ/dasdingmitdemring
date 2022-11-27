@@ -49,7 +49,62 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-
+    <!-- Formbutton -->
+    <script src="https://formspree.io/js/formbutton-v1-2.min.js" defer></script>
+    <script>
+        /* paste this line in verbatim */
+        window.formbutton = window.formbutton || function() {
+            (formbutton.q = formbutton.q || []).push(arguments)
+        };
+        var btn = document.getElementById('Teilnahme');
+        btn.onclick = window.formbutton || function() {
+            (formbutton.q = formbutton.q || []).push(arguments)
+        };
+        /* customize formbutton below*/
+        formbutton("create", {
+            action: "https://formspree.io/f/mzbwqjel",
+            title: "Was bringst Du mit?",
+            fields: [{
+                    type: "Name",
+                    label: "Name:",
+                    name: "name",
+                    required: true,
+                    placeholder: "Schneewittchen",
+                },
+                {
+                    type: "email",
+                    label: "E-Mail:",
+                    name: "email",
+                    required: true,
+                    placeholder: "ich@examp.le",
+                },
+                {
+                    type: "textarea",
+                    label: "Personen:",
+                    name: "people",
+                    required: true,
+                    placeholder: "zbsp. Wir kommen mit 7 Zwergen",
+                },
+                {
+                    type: "textarea",
+                    label: "Mundvorrat:",
+                    name: "essen",
+                    placeholder: "zbsp. 3 pappsche Salzstangen",
+                },
+                {
+                    type: "submit"
+                }
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "#06705c"
+                },
+                button: {
+                    backgroundColor: "#06705c"
+                }
+            }
+        });
+    </script>
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -219,66 +274,11 @@
                         <div class="col-md-3 text-center animate-box">
                             <div class="groom-men">
                                 <h3>Ern&auml;hrung</h3>
-                                <p>Damit auch jeder satt wird bitten wir euch um kulinarische Sachspenden. Tragt das bitte mit in die Teilnahmebest&auml;tigung unten rechts ein, Die Liste wird dann Zeitnah aktualisiert.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center animate-box">
-                            <div class="groom-men">
-                                <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-                                <script>
-                                    /* paste this line in verbatim */
-                                    window.formbutton = window.formbutton || function() {
-                                        (formbutton.q = formbutton.q || []).push(arguments)
-                                    };
-                                    /* customize formbutton below*/
-                                    formbutton("create", {
-                                        action: "https://formspree.io/f/mzbwqjel",
-                                        title: "Was bringst Du mit?",
-                                        fields: [{
-                                                type: "name",
-                                                label: "Name:",
-                                                name: "name",
-                                                required: true,
-                                                placeholder: "Utan Klaus",
-                                            },
-                                            {
-                                                type: "email",
-                                                label: "E-Mail:",
-                                                name: "email",
-                                                required: true,
-                                                placeholder: "ich@examp.le",
-                                            },
-                                            {
-                                                type: "textarea",
-                                                label: "Personen:",
-                                                name: "people",
-                                                required: true,
-                                                placeholder: "zbsp. Wir kommen mit 7 Zwergen",
-                                            },
-                                            {
-                                                type: "textarea",
-                                                label: "Mundvorrat:",
-                                                name: "essen",
-                                                placeholder: "zbsp. 3 pappsche Salzstangen",
-                                            },
-                                            {
-                                                type: "submit"
-                                            }
-                                        ],
-                                        styles: {
-                                            title: {
-                                                backgroundColor: "#06705c"
-                                            },
-                                            button: {
-                                                backgroundColor: "#06705c"
-                                            }
-                                        }
-                                    });
-                                </script>
+                                <p>Damit auch jeder satt wird bitten wir euch um kulinarische Sachspenden. Tragt das bitte mit in die Teilnahmebest&auml;tigung unten rechts ein, Die Liste wird dann zeitnah aktualisiert.</p>
                             </div>
                         </div>
                         <div class="row text-center animate-box">
-                            <div class="groom-men">
+                            <div class="groom-men" style="overflow:scroll;">
                                 <p>
                                     <strong>Caro &amp; Kai</strong> bringen die <strong>Getr&auml;nke</strong> mit.</br>
                                     <strong>Caro &amp; Kai</strong> bringen auch noch andere <strong>sch&ouml;ne Dinge</strong> mit.</br>
@@ -291,20 +291,19 @@
             <div id="fh5co-guest">
                 <div class="container">
                     <div class="col-md-6 text-center animate-box">
-                        <div class="wedding-events">
-                            <div class="desc">
-                                <a name="FAQ">
-                                    <h3>H&auml;fig gestellte Fragen</h3>
-                                </a>
-                                <p><strong>Gibt es einen Dresscode?</strong></p>
-                                <p>Wir wollen mit euch ein gem&uuml;tliches Gartenfest feiern. abei sollt ihr euch in aller erster Line wohl f&uuml;hlen - Ob ihr das in eurer Lieblingsjogger, oder im Coctailkleid tut ist uns gleich.</p>
-                                <p><strong>Kann ich noch jemanden mitbringen?</strong></p>
-                                <p>Eingeladen ist neben Dir selbstverst&auml;ndlich auch immer dein Lieblingslingsmensch.</p>
-                                <p><strong>... und was ist mit den Kindern?</strong></p>
-                                <p>"Kinderl&auml;rm ist Zukunftsmusik!" also immer her mit den Spr&ouml;&szlig;lingen.</br>Wir haben eine gro&szlig;e Wiese zum Rumtoben und einiges an Spiel &amp; Spa&szlig; vorbereitet (durchaus auch von den augewachsenen Veranstaltungsteilnehmern nutzbar)</p>
-                                <p><strong>Wollt Ihr eigentlich auch Geschenke?</strong></p>
-                                <p>Ganz abgedroschen, aber dennoch voller &Uuml;berzeugung:</br>Uner gr&ouml;&szlig;tes Geschenk ist es, diesen besonderen Tag mit euch zu teilen und zu einem unvergesslichen werden zu lassen.</br>Wer dennoch etwas schenken will, darf gerne unser "Zeit-statt-Zeug" Sparschwein füttern.</p>
-                            </div>
+
+                        <div class="desc full">
+                            <a name="FAQ">
+                                <h3>H&auml;fig gestellte Fragen</h3>
+                            </a>
+                            <p><strong>Gibt es einen Dresscode?</strong></p>
+                            <p>Wir wollen mit euch ein gem&uuml;tliches Gartenfest feiern. Dabei sollt ihr euch in aller erster Linie wohl f&uuml;hlen - Ob ihr das in eurer Lieblingsjogger, oder im Coctailkleid tut ist uns gleich.</p>
+                            <p><strong>Kann ich noch jemanden mitbringen?</strong></p>
+                            <p>Eingeladen ist neben Dir selbstverst&auml;ndlich auch immer dein Lieblingslingsmensch.</p>
+                            <p><strong>... und was ist mit den Kindern?</strong></p>
+                            <p>"Kinderl&auml;rm ist Zukunftsmusik!" also immer her mit den Spr&ouml;&szlig;lingen.</br>Wir haben eine gro&szlig;e Wiese zum Rumtoben und einiges an Spiel &amp; Spa&szlig; vorbereitet (durchaus auch von den augewachsenen Veranstaltungsteilnehmern nutzbar 😊)</p>
+                            <p><strong>Wollt Ihr eigentlich auch Geschenke?</strong></p>
+                            <p>Ganz abgedroschen, aber dennoch voller &Uuml;berzeugung:</br>Unser gr&ouml;&szlig;tes Geschenk ist es, diesen besonderen Tag mit euch zu teilen und zu einem unvergesslichen werden zu lassen.</br>Wer dennoch etwas schenken will, darf gerne unser "Zeit-statt-Zeug" Sparschwein füttern.</p>
                         </div>
                     </div>
                 </div>
@@ -320,35 +319,8 @@
                     </div>
                     <div name="formular" class="row animate-box">
                         <div class="col-md-10 col-md-offset-1">
-                            <form name=”Hochzeit-Zusage” class="form-inline" method="POST" action="https://formspree.io/f/xqkjodbr" netlify-data="true">
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="name" class="sr-only">Name:</label>
-                                        <input type="name" class="form-control" id="name" name="name" placeholder="Name" required>
-                                        </br></br>
-                                        <label for="email" class="sr-only">Email:</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="note" class="sr-only">Ein Kurze Nachricht:</label>
-                                        <textarea rows="4" class="form-control" id="note" name="message" placeholder="Bringst Du jemanden mit?" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <button type="submit" class="btn btn-primary">Ich bin dabei!</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="fh5co-guest">
-                <div class="container">
-                    <div class="row animate-box">
-                        <div class="col-md-8 col-md-offset-2 text-center heading-section">
-                            <div id="app">
+                            <div class="col-md-4 col-sm-4">
+                                <button type="submit" class="btn btn-primary btn-big" id="Teilnahme">Ich bin dabei!</button>
                             </div>
                         </div>
                     </div>

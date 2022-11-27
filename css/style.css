@@ -888,6 +888,10 @@ figure {
   background: #06705c;
   color: #fff !important;
 }
+.btn.btn-primary.btn-big {
+  width: 66%;
+  height: 42px;
+}
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
   color: #fff;

@@ -1104,6 +1104,13 @@ figure {
             color: $brand-white !important;
 
         }
+
+        &.btn-big {
+
+            width: 66%;
+            height: 42px;
+
+        }
     }
 
     &:hover,
