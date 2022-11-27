@@ -679,7 +679,7 @@ figure {
 #fh5co-guest,
 #fh5co-gallery,
 .fh5co-content-section {
-    padding: 7em 0;
+    padding: 3em 0;
 
     @media screen and (max-width: $screen-sm) {
         padding: 4em 0;
@@ -810,6 +810,10 @@ figure {
             strong {
                 font-size: 14px;
             }
+        }
+
+        &.full {
+            width: 90%;
         }
     }
 }
