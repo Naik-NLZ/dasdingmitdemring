@@ -309,15 +309,12 @@
         formbutton("create", {
             action: "https://formspree.io/f/mzbwqjel",
             title: "Du bist dabei?",
-            /* change icon 
-            buttonImg: "<i class='fas fa-thumbs-up' style='font-size:64px'/>",*/
-            buttonImg: "<img class='ico-img nav-header' src='/images/rings.png'>",
             /*feedback after submit*/
             onResponse: function(ok, setStatus) {
                 if (ok) {
                     setStatus("Danke! Wir melden uns wenn es noch Fragen, oder Neuigkeiten gibt..");
                 } else {
-                    setStatus("<span style='color:red'>Huch, da gab es ein Problem...</span>");
+                    setStatus("<span style='color:red'>Huch, da gab es ein Problem...</br> Bitte pr&uuml;fe Deine Eingabe und versuche es nochmal.</span>");
                 }
             },
             /* Input fields*/
