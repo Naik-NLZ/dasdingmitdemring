@@ -235,11 +235,14 @@
             </div>
             <div id="fh5co-guest">
                 <div class="container">
+                    <div class="row animate-box">
+                        <div class="col-md-8 col-md-offset-2 text-center heading-section">
+                            <h2>H&auml;fig gestellte Fragen</h2>
+                            <a name="FAQ"></a>
+                        </div>
+                    </div>
                     <div class="row row-bottom-padded-md text-center">
                         <div class="desc full">
-                            <a name="FAQ">
-                                <h2>H&auml;fig gestellte Fragen</h2>
-                            </a>
                             <p><strong>Gibt es einen Dresscode?</strong></p>
                             <p>Wir wollen mit euch ein gem&uuml;tliches Gartenfest feiern. Dabei sollt ihr euch in aller erster Linie wohl f&uuml;hlen - Ob ihr das in eurer Lieblingsjogger, oder im Coctailkleid tut ist uns gleich.</p>
                             <p><strong>Kann ich noch jemanden mitbringen?</strong></p>
@@ -264,7 +267,7 @@
                     <div name="formular" class="row animate-box">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="col-md-8 col-md-offset-3 text-center">
-                                <button type="submit" class="btn btn-primary btn-big" onclick="formbutton( toggleForm() )" id="Teilnahme">Ich bin dabei!</button>
+                                <button type="submit" class="btn btn-primary btn-big" onclick="formbutton( 'toggleForm' )" id="Teilnahme">Ich bin dabei!</button>
                             </div>
                         </div>
                     </div>
@@ -308,6 +311,8 @@
             title: "Du bist dabei?",
             /* change icon 
             buttonImg: "<i class='fas fa-thumbs-up' style='font-size:64px'/>",*/
+            buttonImg: "<img class="
+            ico - img nav - header " src=". / images / rings.png ">"
             /*feedback after submit*/
             onResponse: function(ok, setStatus) {
                 if (ok) {
